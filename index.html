@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transporte Executivo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">ALPHA TRANSPORTE EXECUTIVO</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#experience">Serviços</a></li>
-          <li><a href="#projects">Veiculos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transporte Executivo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">ALPHA TRANSPORTE EXECUTIVO</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Serviços</a></li>
+        <li><a href="#projects">Veiculos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Alpha executivo Transportes</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Alpha executivo Transportes</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Serviços</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Veiculos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Serviços</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Veiculos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/1-removebg-preview (1).png" alt="Carlos profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Olá, me chamo</p>
-        <h1 class="title">Carlos Augusto</h1>
-        <p class="section__text__p2">Seu Motorista Executivo</p>
-        <p class="section__text__p2">Alphaville/Tambore</p>
-        
-        <div class="btn-container">
-          <!-- <button
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/1-removebg-preview (1).png" alt="Carlos profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, me chamo</p>
+      <h1 class="title">Carlos Augusto</h1>
+      <p class="section__text__p2">Seu Motorista Executivo</p>
+      <p class="section__text__p2">Alphaville/Tambore</p>
+
+      <div class="btn-container">
+        <!-- <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
           </button> -->
-          <button class="btn btn-color-1" onclick="location.href='https://wa.me/5511998871656'">
-            Whatsapp
-          </button>
-          
-        </div>
-       
+        <button class="btn btn-color-1" onclick="location.href='https://wa.me/5511998871656'">
+          Whatsapp
+        </button>
 
-        
-        <!-- <div id="socials-container">
+      </div>
+
+
+
+      <!-- <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
@@ -75,32 +77,25 @@
             onclick="location.href='https://github.com/'"
           />
         </div> -->
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">
+      Conheça mais</p>
+    <h1 class="title">Sobre nós</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/ford-fusion-2017-2018-1604313833.440541-removebg-preview.png" alt="Profile picture"
+          class="about-pic" />
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">
-        Conheça mais</p>
-      <h1 class="title">Sobre nós</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/ford-fusion-2017-2018-1604313833.440541-removebg-preview.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiença</h3>
-              <p>10 anos +<br />Motorista Executivo</p>
-            </div>
-            <!-- <div class="details-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiença</h3>
+            <p>10 anos +<br />Motorista Executivo</p>
+          </div>
+          <!-- <div class="details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -112,221 +107,159 @@
           </div> -->
           <div class="text-container">
             <p>
-              A Alpha Executivo nasceu para que você tenha liberdade de escolher como quer ser atendido e não 
+              A Alpha Executivo nasceu para que você tenha liberdade de escolher como quer ser atendido e não
               fique limitado apenas às opções disponíveis nos aplicativos de mobilidade urbana.
-              Somos especializados no deslocamento de pessoas para qualquer ocasião 
-              no estado de São Paulo, atuando em diferentes serviços de viagens individuais ou em grupos, 
+              Somos especializados no deslocamento de pessoas para qualquer ocasião
+              no estado de São Paulo, atuando em diferentes serviços de viagens individuais ou em grupos,
               com soluções personalizadas de acordo com o tipo de necessidade.
 
-        
+
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Conheça nossos</p>
-      <h1 class="title">Serviços</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Serviços</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/aviao.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Transfer para Aeroportos</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/saude.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Feiras, Eventos e Conveções</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/casal.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Casamentos e Formaturas</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mapa-de-viagem.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Viagens intermunicipais </h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/carros.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Passeios culturais e city tours</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/estrelas.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Atendimento Vip</h3>
-                  
-                </div>
-              </article>
-            </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Conheça nossos</p>
+    <h1 class="title">Serviços</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Serviços</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/aviao.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Transfer para Aeroportos</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/saude.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Feiras, Eventos e Conveções</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/casal.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Casamentos e Formaturas</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mapa-de-viagem.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Viagens intermunicipais </h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/carros.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Passeios culturais e city tours</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/estrelas.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Atendimento Vip</h3>
+
+              </div>
+            </article>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">DIFERENCIAIS</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/agua.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Serviços de bordo em todas as viagens</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/spray-de-limpeza.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Veiculos limpos e higienizados diariamente</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/rotacao-no-sentido-horario.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Monitoramento de voo em tempo real</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/sinal-wifi.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Wi-fi de bordo, carregador de celular</h3>
-                  
-                </div>
-              </article>
-            </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DIFERENCIAIS</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/agua.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Serviços de bordo em todas as viagens</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/spray-de-limpeza.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Veiculos limpos e higienizados diariamente</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/rotacao-no-sentido-horario.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Monitoramento de voo em tempo real</h3>
+
+              </div>
+            </article>
+            <article>
+              <img src="./assets/sinal-wifi.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Wi-fi de bordo, carregador de celular</h3>
+
+              </div>
+            </article>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Conheça nossos</p>
-      <h1 class="title">Veiculos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/fluence.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Fluence</h2>
-            <div class="btn-container">
-              <!-- <button
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Conheça nossos</p>
+    <h1 class="title">Veiculos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/fluence.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Fluence</h2>
+          <div class="btn-container">
+            <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.instagram.com/mcguime/'"
               >
                 @MCGUIME
               </button> -->
-              <!-- <button
+            <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
               </button> -->
-            </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/jetta.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Jetta</h2>
-            <div class="btn-container">
-              <!-- <button
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/jetta.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Jetta</h2>
+          <div class="btn-container">
+            <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.instagram.com/lexa/'"
               >
                 @LEXA
               </button> -->
-              <!-- <button
+            <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
               </button> -->
-            </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/corolla.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Corolla</h2>
-            <div class="btn-container">
-              <!-- <button
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/corolla.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Corolla</h2>
+          <div class="btn-container">
+            <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
@@ -338,144 +271,46 @@
               >
                 Live Demo
               </button> -->
-            </div>
-            
           </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
 
-    <section id="Clientes">
-      <p class="section__text__p1">Conheça nossos</p>
-      <h1 class="title">Clientes</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/1-removebg-preview.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">MC GUIME</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.instagram.com/mcguime/'"
-              >
-                @MCGUIME
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/2-removebg-preview.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">LEXA</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.instagram.com/lexa/'"
-              >
-                @LEXA
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/corolla.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Corolla</h2>
-            <div class="btn-container"> -->
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-            
-          </div>
-        </div>
+
+
+
+  <section id="contact">
+    <p class="section__text__p1">Entre em contato</p>
+    <h1 class="title">Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:alphaexecutivotransportes@gmail.com">Email</a></p>
       </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      /> -->
-    </section>
-
-
-    <section id="contact">
-      <p class="section__text__p1">Entre em contato</p>
-      <h1 class="title">Contato</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:alphaexecutivotransportes@gmail.com">Email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/whatsapp.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://wa.me/5511998871656">Whatsapp</a></p>
-        </div>
+      <div class="contact-info-container">
+        <img src="./assets/whatsapp.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://wa.me/5511998871656">Whatsapp</a></p>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <p><a href="https://wa.me/5511998871656">Telefone: 1199887-1656</a></p>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#experience">Serviços</a></li>
-            <li><a href="#projects">Veiculos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 ALpha executivo. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <p><a href="https://wa.me/5511998871656">Telefone: 1199887-1656</a></p>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Serviços</a></li>
+          <li><a href="#projects">Veiculos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 ALpha executivo. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
